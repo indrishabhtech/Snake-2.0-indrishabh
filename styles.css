@@ -1,0 +1,164 @@
+/* #gameCanvas{
+    height: fit-content;
+    width: max-content;
+    margin-top: 30px; */
+    /* height: 200px;
+    width: 200px; */
+/* } */
+
+.instruct{
+    margin-bottom: 140px;
+    
+}
+
+#gameCanvas {
+margin-top: 80px;
+margin-right: 80px;
+    height: fit-content;
+    width: max-content;
+    /* width: 400px;
+    height: 400px; */
+    transform: scale(1.5); /* Scale the canvas up by a factor of 2 */
+    transform-origin: 0 0; /* Set the transformation origin to the top-left corner */
+}
+
+
+#username-form{
+    /* display: block; */
+
+    margin: auto;
+    /* margin-left: 70px; */
+    padding: auto;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* background-image: url('bg.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#game-container {
+    position:static;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgb(223, 0, 0);
+}
+
+#game-info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#username-form {
+    display: flex;
+    align-items: center;
+}
+
+#username-form label {
+    margin-right: 10px;
+}
+
+#username-form input {
+    margin-right: 10px;
+}
+
+#scoreboard {
+    display: flex;
+    align-items: center;
+}
+
+#scoreboard span {
+    margin-right: 20px;
+}
+
+
+#keyboard_key_up {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    right: 360px;
+    bottom: 300px;
+    border-style: solid;
+    border-color: black;
+    background: rgb(205, 43, 43);
+    height: 2px;
+    width: 2px;
+}
+
+#keyboard_key_down {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    right:360px;
+    bottom: 230px;
+    border-style: solid;
+    border-color: black;
+    background: rgb(205, 43, 43);
+    height: 2px;
+    width: 2px;
+}
+
+
+#keyboard_key_left{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    right:400px;
+    bottom: 265px;
+    border-style: solid;
+    border-color: black;
+    background: rgb(205, 43, 43);
+    height: 2px;
+    width: 2px;
+}
+
+
+
+#keyboard_key_right {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    right:315px;
+    bottom: 265px;
+    border-style: solid;
+    border-color: black;
+    background: rgb(206, 5, 5);
+height: 2px;
+width: 2px;
+
+}
+
+/* Media query to hide the buttons */
+/* @media only screen and (max-width: 1000px) {
+    #username-form {
+        display: none;
+    }
+
+    #pauseButton, #continueButton, #upButton, #downButton, #leftButton, #rightButton, #restartButton, #aButton {
+        display: none;
+    }
+} */
+
+
+@media only screen and (min-width: 501px) {
+    #username-form {
+        display: none;
+    }
+
+    #pauseButton, #continueButton, #upButton, #downButton, #leftButton, #rightButton, #restartButton, #aButton {
+        display: none;
+    }
+}
+
